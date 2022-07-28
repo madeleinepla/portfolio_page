@@ -6,10 +6,18 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Madeleine Pla</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="script.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+		</script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init("Q9VuTyMYeWgptcnx7");
+			})();
+		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -25,7 +33,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Madeleine Pla</h1>
-								<p>something about me</p>
+								<p>programming • music • art</p>
 							</div>
 						</div>
 						<nav>
@@ -82,16 +90,18 @@
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Tech</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<span class="image main"><img src="images/techphoto2.png" alt="" /></span>
 								<p>I am a full stack software engineer in NYC. I have experience in
 								JavaScript, React/Redux, Ruby, Rails, PostgreSQL, HTML, CSS, SQL, Canvas, MongoDB, Express, and Node.js. I am currently
 								learning Python and plan on picking up C++ next.</p>
+								
+								<a href="./images/madeleine_pla_resume.pdf" download>Download my resume</a>
 							</article>
 
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<span class="image main" ><img src="images/aboutphoto.JPG" alt="" /></span>
 								<p></p>
 								<p>I graduated from UC Berkeley in 2016 with a BA in Music. Upon graduation I immediately switched coasts and began
 								pursuing my love for music by playing in several bands across varying subgenres of rock. When the pandemic hit I picked
@@ -107,7 +117,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form action="https://formsubmit.co/madeleine.pla7@gmail.com" method="POST">
+								<!-- <form action="https://formsubmit.co/madeleine.pla7@gmail.com" method="POST">
 									<input type="hidden" name="_subject" value="From: contact form!">
 
 									<div class="fields">
@@ -128,7 +138,35 @@
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
-								</form>
+								</form> -->
+								<div class="form">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" required />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" required />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4" required></textarea>
+										</div>
+									</div>
+									<ul class="actions" >
+										<!-- <li><input type="submit" value="Send Message" class="primary" /></li> -->
+										<li><button onclick="sendMail()" class="primary">Send Message</button></li>
+										<li><button onclick="resetMail()">Reset</button></li>
+									</ul>
+
+								</div>
+								
+								
+								<div id="new">
+
+								</div>
+
 								<ul class="icons">
 									<li><a href="https://www.linkedin.com/in/madeleine-pla-27827519b/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://github.com/madeleinepla" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
