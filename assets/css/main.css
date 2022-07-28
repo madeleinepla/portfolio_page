@@ -300,6 +300,17 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.project-links {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.project-links * {
+		margin-bottom: 0;
+		margin-right: 5px;
+
+	}
+
 /* Form */
 
 	.form {
@@ -696,7 +707,8 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 2.5rem 0;
+			/* margin: 2.5rem 0; */
+			margin: 1rem 0 2.5rem 0;
 			width: 100%;
 		}
 
@@ -719,6 +731,34 @@ input, select, textarea {
 			}
 
 		}
+	
+	.skill-icons {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.skill-icons * {
+		text-align: center;
+	}
+
+	.skill-icons div {
+		margin: 5px;
+		border:1px solid rgba(255, 255, 255, 0.25);
+		border-radius: 4px;
+		padding: 10px 0;
+	}
+
+	.skill-icons h4 {
+		margin-bottom: 5px;
+	}
+
+	.skill-icons i {
+		font-size: 400%;
+	}
+
+	#home-prof-img {
+		margin-top: 0;
+	}
 
 /* List */
 

@@ -11,6 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 		<script src="script.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 		</script>
@@ -29,7 +30,8 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class=" icon solid fa-laptop-code"></span>
+							<!-- <span class=" icon solid fa-laptop-code"></span> -->
+							<img id="home-prof-img" class="image main" src="images/aboutphoto-modified.png" alt="" />
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -58,34 +60,72 @@
 								<hr>
 
 								<h3>Blights Out
-									<a href="https://github.com/madeleinepla/blights_out" class="icon brands fa-github" title="GitHub Link"><span class="label">GitHub</span></a>
-									<a href="https://madeleinepla.github.io/blights_out/" class="icon solid fa-globe" title="Live Link"><span class="label">Live</span></a>
+									
 								</h3>
+								
+								<div class="project-links">
+									<p>
+										github - <a href="https://github.com/madeleinepla/blights_out" target="_blank" rel="noopener noreferrer" class="icon brands fa-github" title="GitHub Link"><span class="label">GitHub</span></a>
+									</p>
+									<p>
+										live - <a href="https://madeleinepla.github.io/blights_out/" target="_blank" rel="noopener noreferrer" class="icon solid fa-globe" title="Live Link"><span class="label">Live</span></a>
+									</p>
+								</div>
+
 								<span class="image main"><img src="images/blights.gif" alt="" /></span>
 								<p>Blights Out is a 2d top down game where you play an altered version of 'red light, green light'. The player controls a
 								child walking down a long hallway at night to get to their parents' room with a monster following behind them. When the
 								player hears the monster drawing near they have to turn around and look at the monster to make it retreat. The player
 								wins if they make it to the parents' room without getting caught.</p>
 
+								<p>Technologies used: javascript, HTML, CSS, canvas.js, howler.js, webpack, babel, npm</p>
+
 								<hr>
 								
 								<h3>Picka Pet
-									<a href="https://github.com/madeleinepla/virtual_pet" class="icon brands fa-github" title="GitHub Link"><span class="label">GitHub</span></a>
-									<a href="https://picka-pet.herokuapp.com/#/" class="icon solid fa-globe" title="Live Link"><span class="label">Live</span></a>
+									<!-- <a href="https://github.com/madeleinepla/virtual_pet" class="icon brands fa-github" title="GitHub Link"><span class="label">GitHub</span></a>
+									<a href="https://picka-pet.herokuapp.com/#/" class="icon solid fa-globe" title="Live Link"><span class="label">Live</span></a> -->
 								</h3>
+
+								<div class="project-links">
+									<p>
+										github - <a href="https://github.com/madeleinepla/virtual_pet" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"
+											title="GitHub Link"><span class="label">GitHub</span></a>
+									</p>
+									<p>
+										live - <a href="https://picka-pet.herokuapp.com/#/" target="_blank" rel="noopener noreferrer" class="icon solid fa-globe" title="Live Link"><span
+												class="label">Live</span></a>
+									</p>
+								</div>
+								
 								<span class="image main"><img src="images/pickapet.gif" alt="" /></span>
 								<p>Picka Pet is a fullstack MERN application that lets users adopt virtual pets to play with. Logged in in users are given the opportunity to pick from a diverse selection dogs and cats.
 								Pet adopters have the option to play with their selected pet(s) through a variety of interactive options. Pet interactions
 								lets users earn points which they can use to buy more pets. Picka Pet encourages users to be responsible before making the commitment to adopt a new pet</p>
-								
+							
+
+								<p>Technologies used: react, redux, javascript, HTML, CSS, express.js, mongoose.js, mongoDB, heroku</p>
+
 								<hr>
 
-								<h3>BoardGameFreak
-									<a href="https://github.com/madeleinepla/board_game_freak" class="icon brands fa-github" title="GitHub Link"><span class="label">GitHub</span></a>
-									<a href="https://board-game-freak1.herokuapp.com/#/" class="icon solid fa-globe" title="Live Link"><span class="label">Live</span></a>
-								</h3>
+								<h3>BoardGameFreak</h3>
+
+								<div class="project-links">
+									<p>
+										github - <a href="https://github.com/madeleinepla/board_game_freak" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"
+											title="GitHub Link"><span class="label">GitHub</span></a>
+									</p>
+									<p>
+										live - <a href="https://board-game-freak1.herokuapp.com/#/" target="_blank" rel="noopener noreferrer" class="icon solid fa-globe" title="Live Link"><span
+												class="label">Live</span></a>
+									</p>
+								</div>
+
 								<span class="image main"><img src="images/boardgame.gif" alt="" /></span>
 								<p>BoardGameFreak, a BoardGameGeek clone, is an online forum for board gaming hobbyists. On BoardGameFreak, a user can sign-up/log-in, browse games in the database, post lists of their favorite games, and comment/like other users' lists</p>
+
+								<p>Technologies used: react, redux, javascript, ruby on rails, HTML, CSS, postgreSQL, heroku</p>
+
 							</article>
 
 						<!-- Work -->
@@ -122,33 +162,84 @@
 								skillset that I improve upon everyday, and an excitement for what my future in software engineering holds.</p>
 
 								<img class="image main" src="images/aboutphoto-modified.png" alt="" />
+
+								<hr>
+
+								<h3>Skills</h3>
+								<div class="skill-icons">
+									<div>
+										<h4>JavaScript</h4>
+										<i class="devicon-javascript-plain"></i>
+									</div>
+									<div>
+										<h4>React</h4>
+										<i class="devicon-react-original"></i>
+									</div>
+									<div>
+										<h4>Redux</h4>
+										<i class="devicon-redux-original"></i>
+									</div>
+									<div>
+										<h4>Ruby</h4>
+										<i class="devicon-ruby-plain"></i>
+									</div>
+									<div>
+										<h4>Ruby on Rails</h4>
+										<i class="devicon-rails-plain"></i>
+									</div>
+									<div>
+										<h4>HTML5</h4>
+										<i class="devicon-html5-plain"></i>
+									</div>
+									<div>
+										<h4>CSS3</h4>
+										<i class="devicon-css3-plain"></i>
+									</div>
+									<div>
+										<h4>Python</h4>
+										<i class="devicon-python-plain"></i>
+									</div>
+									<div>
+										<h4>Sass</h4>
+										<i class="devicon-sass-original"></i>
+									</div>
+									<div>
+										<h4>PostgreSQL</h4>
+										<i class="devicon-postgresql-plain"></i>
+									</div>
+									<div>
+										<h4>MongoDB</h4>
+										<i class="devicon-mongodb-plain"></i>
+									</div>
+									<div>
+										<h4>Webpack</h4>
+										<i class="devicon-webpack-plain"></i>
+									</div>
+									<div>
+										<h4>Node.js</h4>
+										<i class="devicon-nodejs-plain"></i>
+									</div>
+									<div>
+										<h4>Express.js</h4>
+										<i class="devicon-express-original"></i>
+									</div>
+									<div>
+										<h4>Git</h4>
+										<i class="devicon-git-plain"></i>
+									</div>
+									<div>
+										<h4>Heroku</h4>
+										<i class="devicon-heroku-original"></i>
+									</div>
+							
+								</div>
+								<!-- <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg'> -->
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<!-- <form action="https://formsubmit.co/madeleine.pla7@gmail.com" method="POST">
-									<input type="hidden" name="_subject" value="From: contact form!">
 
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" required/>
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" required/>
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4" required></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form> -->
 								<div class="form">
 									<div class="fields">
 										<div class="field half">
